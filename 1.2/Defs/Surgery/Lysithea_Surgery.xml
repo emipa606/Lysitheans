@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>InstallYtailn</defName>
+    <label>Instal lysithean tail</label>
+    <description>Instals a tail.</description>
+    <workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+    <jobString>Installing tail.</jobString>
+    <workAmount>800</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>YTailn</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>YTailn</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>YTailn</li>
+    </appliedOnFixedBodyParts>
+  </RecipeDef>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>InstallYTailbasic</defName>
+    <label>Instal basic tail</label>
+    <description>Instals a basic tail.</description>
+    <workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+    <jobString>Installing basic tail.</jobString>
+    <workAmount>700</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>YTailbasic</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>YTailbasic</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>YTailn</li>
+    </appliedOnFixedBodyParts>
+  </RecipeDef>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>InstallYTailBionic</defName>
+    <label>install bionic tail</label>
+    <description>Installs bionic tail.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Installing bionic tail.</jobString>
+    <workAmount>1100</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>YTailBionic</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>YTailBionic</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>YTailn</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>BionicYtail</addsHediff>
+  </RecipeDef>
+</Defs>

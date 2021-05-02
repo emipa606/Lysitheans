@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <BodyPartDef>
+    <defName>YTailn</defName>
+    <label>tail</label>
+    <hitPoints>18</hitPoints>
+    <frostbiteVulnerability>0.05</frostbiteVulnerability>
+    <permanentInjuryChanceFactor>0.02</permanentInjuryChanceFactor>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>MovingLimbDigit</li>
+    </tags>
+  </BodyPartDef>
+</Defs>
