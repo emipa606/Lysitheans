@@ -71,6 +71,13 @@
         </options>
       </li>
       <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <LysitheanCitizen>30</LysitheanCitizen>
+          <LysitheanLeader>1</LysitheanLeader>
+        </options>
+      </li>
+      <li>
         <kindDef>Trader</kindDef>
         <traders>
           <Town_Trader>1</Town_Trader>

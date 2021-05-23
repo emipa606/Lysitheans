@@ -7,18 +7,27 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1206926528
 
 ![Image](https://i.imgur.com/7Gzt3Rg.png)
 
+
+[table]
+    [tr]
+        [td]https://invite.gg/Mlie]![Image](https://i.imgur.com/zdzzBrc.png)
+[/td]
+        [td]https://github.com/emipa606/Lysitheans]![Image](https://i.imgur.com/kTkpTOE.png)
+[/td]
+    [/tr]
+[/table]
 	
 ![Image](https://i.imgur.com/NOW7jU1.png)
 
 Mod that adds the Lysithean race.
-You will need Humanoid alien races for (b18).
+You will need Humanoid alien races
 
 This mod adds a custom race named the Lysitheans, these creatures don't tend to play with fire but will put it out. The Lysitheans have a faster move speed but are worse for social and mining. The Lysitheans are a bit smaller and weaker in terms of health than the humans. 
 
 This mod adds in the a new body part, and bionic part for the creatures as well as some guns.
 
 
-You will need Humanoid alien races for (b18).
+You will need Humanoid alien races
 
 
 Look at that poorly done image.

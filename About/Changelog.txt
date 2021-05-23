@@ -1,4 +1,7 @@
 # Changelog for Lysitheans
 
+1.0.1.0 - Added peaceful pawngroup for guest-spawning
+
+
 1.0.0.0 - First publish
 
