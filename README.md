@@ -5,6 +5,8 @@
 Update of Gabe C(Y=3Cos(x-45)+2)s mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1206926528
 
+- Added peaceful pawngroup for guest
+
 ![Image](https://i.imgur.com/7Gzt3Rg.png)
 
 
