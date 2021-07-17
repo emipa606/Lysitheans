@@ -6,6 +6,7 @@
   <url>https://github.com/emipa606/Lysitheans</url>
   <supportedVersions>
     <li>1.2</li>
+    <li>1.3</li>
   </supportedVersions>
   <modDependencies>
     <li>
@@ -23,6 +24,7 @@ Update of Gabe C(Y=3Cos(x-45)+2)s mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1206926528
 
 - Added peaceful pawngroup for guest
+- Fixed the tail-graphics
 
 [img]https://i.imgur.com/7Gzt3Rg.png[/img]
 
@@ -37,7 +39,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1206926528
 Mod that adds the Lysithean race.
 You will need Humanoid alien races
 
-This mod adds a custom race named the Lysitheans, these creatures don't tend to play with fire but will put it out. The Lysitheans have a faster move speed but are worse for social and mining. The Lysitheans are a bit smaller and weaker in terms of health than the humans. 
+This mod adds a custom race named the Lysitheans, these creatures don&apos;t tend to play with fire but will put it out. The Lysitheans have a faster move speed but are worse for social and mining. The Lysitheans are a bit smaller and weaker in terms of health than the humans. 
 
 This mod adds in the a new body part, and bionic part for the creatures as well as some guns.
 

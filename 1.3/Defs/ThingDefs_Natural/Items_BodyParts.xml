@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- natural -->
+  <ThingDef ParentName="BodyPartBase">
+    <defName>YTailn</defName>
+    <label>Tail</label>
+    <description>A Lysithean tail.</description>
+    <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingCategories>
+      <li>BodyPartsNatural</li>
+    </thingCategories>
+    <statBases>
+      <MarketValue>500</MarketValue>
+      <DeteriorationRate>4.0</DeteriorationRate>
+      <Mass>3</Mass>
+    </statBases>
+  </ThingDef>
+  <!-- artificial - simple prosthetics -->
+  <ThingDef ParentName="BodyPartBase">
+    <defName>YTailbasic</defName>
+    <label>Simple Lysithean tail</label>
+    <description>Simple prosthesis made to replace missing tail. Not very comfortable but quite efficient.</description>
+    <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingCategories>
+      <li>BodyPartsProsthetic</li>
+    </thingCategories>
+    <statBases>
+      <MarketValue>400</MarketValue>
+      <Mass>8</Mass>
+    </statBases>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+  </ThingDef>
+  <ThingDef ParentName="BodyPartBase">
+    <defName>YTailBionic</defName>
+    <label>bionic Lysithean tail</label>
+    <description>One of the most sophisticated tail replacements. Allows for better posture, increasing movement speed.</description>
+    <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingCategories>
+      <li>BodyPartsBionic</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Bionic</li>
+    </tradeTags>
+    <statBases>
+      <MarketValue>1075</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+  </ThingDef>
+</Defs>

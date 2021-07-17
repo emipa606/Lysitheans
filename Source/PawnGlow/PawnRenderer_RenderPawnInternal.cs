@@ -4,22 +4,16 @@ using Verse;
 
 namespace PawnGlow
 {
-    [HarmonyPatch(typeof(PawnRenderer), "RenderPawnInternal", typeof(Vector3),
-        typeof(float),
-        typeof(bool),
-        typeof(Rot4),
-        typeof(Rot4),
-        typeof(RotDrawMode),
-        typeof(bool),
-        typeof(bool),
-        typeof(bool))]
+    [HarmonyPatch(typeof(PawnRenderer), "RenderPawnInternal")]
     internal class PawnRenderer_RenderPawnInternal
     {
         // Token: 0x0600000A RID: 10 RVA: 0x00002368 File Offset: 0x00000568
         public static void Postfix(ref PawnRenderer __instance, Vector3 rootLoc,
-            float angle, bool renderBody, Rot4 bodyFacing, Rot4 headFacing, RotDrawMode bodyDrawType, bool portrait,
-            bool headStump, bool invisible)
+            float angle, bool renderBody, Rot4 bodyFacing, RotDrawMode bodyDrawType, PawnRenderFlags flags)
         {
+            var portrait = (flags & PawnRenderFlags.Portrait) != 0;
+            var headStump = (flags & PawnRenderFlags.HeadStump) != 0;
+
             if (__instance == null)
             {
                 return;
@@ -57,35 +51,30 @@ namespace PawnGlow
                 }
             }
 
-            var flag6 = true;
+            var pawnAlive = true;
             if (!pawn.def.GetModExtension<PawnGlowProperties>().drawHeadWhileDead)
             {
-                flag6 = !pawn.Dead;
+                pawnAlive = !pawn.Dead;
             }
 
-            var flag8 = true;
+            var drawPortrait = true;
             if (!pawn.def.GetModExtension<PawnGlowProperties>().drawHeadWhileSleeping)
             {
-                bool flag11;
+                drawPortrait = portrait;
                 if (!portrait)
                 {
                     var jobs = pawn.jobs;
 
                     if (jobs?.curDriver != null)
                     {
-                        flag11 = !pawn.jobs.curDriver.asleep;
-                        goto IL_167;
+                        drawPortrait = !pawn.jobs.curDriver.asleep;
                     }
                 }
-
-                flag11 = portrait;
-                IL_167:
-                flag8 = flag11;
             }
 
             if (!(pawn.def.GetModExtension<PawnGlowProperties>().drawHead && pawn.RaceProps.Humanlike &&
                   !headStump &&
-                  flag6 && flag8))
+                  pawnAlive && drawPortrait))
             {
                 return;
             }
@@ -102,24 +91,24 @@ namespace PawnGlow
                 rootLoc.y += 0.02734375f;
             }
 
-            var vector3 = quat * __instance.BaseHeadOffsetAt(headFacing);
+            var vector3 = quat * __instance.BaseHeadOffsetAt(bodyFacing);
             var vector4 = vector2 + vector3 +
                           new Vector3(0f, pawn.def.GetModExtension<PawnGlowProperties>().headOffsetY, 0f);
-            var mesh2 = MeshPool.humanlikeHeadSet.MeshAt(headFacing);
-            if (headFacing == Rot4.North)
+            var mesh2 = MeshPool.humanlikeHeadSet.MeshAt(bodyFacing);
+            if (bodyFacing == Rot4.North)
             {
                 if (!pawn.def.GetModExtension<PawnGlowProperties>().drawNorthHead)
                 {
                     GenDraw.DrawMeshNowOrLater(mesh2, vector4, quat,
                         EffectTextures.GetHeadGraphic(pawn.def.GetModExtension<PawnGlowProperties>())
-                            .MatAt(headFacing),
+                            .MatAt(bodyFacing),
                         portrait);
                 }
             }
             else
             {
                 GenDraw.DrawMeshNowOrLater(mesh2, vector4, quat,
-                    EffectTextures.GetHeadGraphic(pawn.def.GetModExtension<PawnGlowProperties>()).MatAt(headFacing),
+                    EffectTextures.GetHeadGraphic(pawn.def.GetModExtension<PawnGlowProperties>()).MatAt(bodyFacing),
                     portrait);
             }
         }
