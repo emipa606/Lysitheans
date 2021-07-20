@@ -169,10 +169,20 @@
           <body>Things/Lysithean/Body/</body>
         </li>
       </graphicPaths>
-      <hairSettings>
-        <hasHair>false</hasHair>
-        <getsGreyAt>80</getsGreyAt>
-      </hairSettings>
+      <styleSettings>
+        <li>
+          <key>HairDef</key>
+          <value>
+            <hasStyle>false</hasStyle>
+          </value>
+        </li>
+        <li>
+          <key>BeardDef</key>
+          <value>
+            <hasStyle>false</hasStyle>
+          </value>
+        </li>
+      </styleSettings>
       <thoughtSettings>
         <cannotReceiveThoughts>
           <li>NeedOutdoors</li>
