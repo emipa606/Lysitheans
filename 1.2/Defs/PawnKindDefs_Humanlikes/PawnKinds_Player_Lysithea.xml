@@ -21,7 +21,9 @@
     </backstoryFilters>
     <chemicalAddictionChance>0.03</chemicalAddictionChance>
     <apparelTags>
-      <li>Spacer</li>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+      <li>SpacerMilitary</li>
     </apparelTags>
     <apparelMoney>
       <min>1000</min>
