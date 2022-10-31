@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="LeatherBase">
+    <defName>Leather_Lysithean</defName>
+    <label>lysithean pelt</label>
+    <description>Tanned, dried, scraped lysithean pelt. Most people find this material horrifying. Some find it fascinating. While a decent pelt, it neither protects nor insulates particularly well.</description>
+    <graphicData>
+      <color>(90,125,60)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>8</MarketValue>
+      <StuffPower_Armor_Sharp>0.64</StuffPower_Armor_Sharp>
+      <StuffPower_Insulation_Cold>5</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>5</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(90,125,60)</color>
+      <commonality>0.01</commonality>
+    </stuffProps>
+  </ThingDef>
+</Defs>
